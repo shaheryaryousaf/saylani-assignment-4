@@ -1,0 +1,36 @@
+@media only screen and (max-width: 600px) {
+
+    /* Header Style */
+    header #top-bar .col-md-6,
+    header #top-bar .col-md-6 ul {
+        text-align: center !important;
+        float: none !important;
+    }
+
+    #header-navbar .navbar-brand {
+        width: 75% !important;
+    }
+
+    /* Footer Style */
+    #footer-widgets {
+        padding: 7% 0;
+    }
+
+    #footer-widgets h4 {
+        font-size: 20px !important;
+    }
+
+    /* Contact Page Style */
+    #contact-form #email {
+        margin-top: 1rem;
+    }
+
+    .btn-xs-style {
+        width: 100%;
+    }
+
+    .add-to-cart .col-md-3,
+    .product-details {
+        margin-top: 10px;
+    }
+}

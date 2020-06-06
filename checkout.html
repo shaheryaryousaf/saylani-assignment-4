@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Les Costumes</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/mobile-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/images/favicon.png" />
+</head>
+
+<body>
+
+    <header>
+        <!-- Topbar Start -->
+        <div id="top-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <b>FREE SHIPPING ACROSS PAKISTAN</b>
+                    </div>
+                    <div class="col-md-6">
+                        <ul>
+                            <li><a href="login.html"><i class="fa fa-user"></i>&nbsp; My Account</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="header-navbar">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" /></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa fa-bars" id="bar"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="shop.html">Shop</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+
+                        </ul>
+                        <form id="form" action="search.html" class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search Products ..."
+                                aria-label="Search">
+                            <button style="display: none;" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main-content">
+        <section id="section-1">
+            <div class="container">
+                <h2>Checkout</h2>
+                <hr />
+                <div class="row">
+                    <div class="col-md-7">
+                        <h5>Billig Details</h5>
+                        <form class="checkout-form">
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label for="fname">First Name*</label>
+                                        <input type="text" id="fname" class="form-control" placeholder="First Name"
+                                            required />
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="lname">Last Name*</label>
+                                        <input type="text" id="lname" class="form-control" placeholder="Last Name"
+                                            required />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone*</label>
+                                <input type="text" id="phone" class="form-control" placeholder="Phone" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email*</label>
+                                <input type="email" id="email" class="form-control" placeholder="Email" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="country">Country*</label>
+                                <select class="form-control" id="country" style="height: 45px;">
+                                    <option selected disabled>Select Country</option>
+                                    <option value="Pakistan">Pakistan</option>
+                                    <option value="India">India</option>
+                                    <option value="China">China</option>
+                                    <option value="UAE">UAE</option>
+                                    <option value="USA">USA</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="address">Street Address*</label>
+                                <input type="text" id="address" class="form-control" placeholder="Address" required />
+                                <input type="text" class="form-control"
+                                    placeholder="Apartment, Building, Unit (Optional)" style="margin-top: 10px;" />
+                            </div>
+                            <div class="form-group">
+                                <label for="town">Town / City*</label>
+                                <input type="text" id="town" class="form-control" placeholder="Town / City" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="state">State / Province*</label>
+                                <input type="text" id="state" class="form-control" placeholder="State / Province"
+                                    required />
+                            </div>
+                            <div class="form-group">
+                                <label for="postcode">Postcode / Zip*</label>
+                                <input type="text" id="postcode" class="form-control" placeholder="Postcode / Zip"
+                                    required />
+                            </div>
+                        </form>
+                        <h5>Shipping Notes</h5>
+                        <textarea class="form-control" placeholder="Additional Information (Optional)"
+                            rows="3"></textarea>
+                    </div>
+                    <div class="col-md-5">
+                        <h5>Your Order</h5>
+                        <table class="table table-bordered order-table">
+                            <tr>
+                                <th>Product</th>
+                                <th>Total</th>
+                            </tr>
+                            <tr>
+                                <td>Suit 1</td>
+                                <td>Rs. 2,400</td>
+                            </tr>
+                            <tr>
+                                <th>Subtotal</th>
+                                <td>Rs. 2,400</td>
+                            </tr>
+                            <tr>
+                                <th>Shipping</th>
+                                <td>Free</td>
+                            </tr>
+                            <tr>
+                                <th>Total</th>
+                                <td>Rs. 2,400</td>
+                            </tr>
+                        </table>
+                        <br />
+                        <h5>Payment Method</h5>
+                        <ul class="list-group payment-type">
+                            <li class="list-group-item active">Cash on Delivery</li>
+                            <li class="list-group-item">
+                                <p style="margin-bottom: 0">You will have to pay Cash on Delivery payment to your
+                                    couries service after receiving
+                                    the Product.</p>
+                            </li>
+                        </ul>
+                        <br />
+                        <button class="btn btn-primary btn-block">Place Order</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div id="footer-widgets">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4>About Us</h4>
+                        <hr />
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero pariatur, neque vitae in
+                            perferendis similique veritatis aperiam harum consequuntur praesentium, aliquid quisquam
+                            magnam accusantium a iure culpa laborum voluptatum veniam!</p>
+                    </div>
+                    <div class="col-md-6">
+                        <h4>Contact Us</h4>
+                        <hr />
+                        <ul>
+                            <li><a href="https://www.facebook.com/Les-Costumes-104377481275526/" target="_blank"><i
+                                        class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="bottom-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="text-center">All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
